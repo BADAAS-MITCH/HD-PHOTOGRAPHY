@@ -1,0 +1,133 @@
+/* general */
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: auto;
+    background: #444;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+/* main */
+main{
+    max-width: 900px;
+    margin: auto;
+}
+
+/* landing */
+#landing{
+    background-color: #444;
+    color: #ccc;
+}
+
+#landing-text{
+    display: flex;
+    flex: 0 1 40vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    padding-right: 1rem;
+    padding-left: 1rem ;
+}
+
+#landing-text h2{
+    color: rgb(150, 148, 148);
+}
+
+#landing-image{
+    background: url(img/Camera.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+/* button */
+.btn{
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #443;
+    transition: background 10000ms ease;
+}
+
+.btn:hover{
+    background: #979696cc;
+}
+
+/* header */
+#header{
+    padding: 1.5rem;
+    text-align: center;
+    background: #443;
+    color: #ccc;
+}
+
+#header h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-left: dotted 1px #ccc;
+    border-right: dotted 1px #ccc;
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.caption{
+    padding: 0.8rem;
+    text-align: center;
+    color: #ccc;
+    background: #000;
+}
+
+footer{
+    color: #bbb;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+}
+
+footer h3{
+    font-size: 2rem;
+}
+
+/* media query */
+@media (min-width: 700px){
+    #landing{
+        display: flex;
+        padding-top: 5px;
+        height: 100%;
+
+    }
+
+    #landing-text{
+        height: 100vh;
+        border-top: 1px #000 dotted;
+        border-left: 1px #000 dotted;
+    }
+
+    #landing-image{
+        height: 100vh;
+    }
+}
+
